@@ -9,7 +9,7 @@
         .left-align {
             float: left;
             width: 15%;
-            margin-top:2.5vw
+            margin-top:1vw;
 
 
         }
@@ -19,77 +19,91 @@
 
         .right-align {
             float: left;
-            width: 30%;
-            margin-top:2vw;
+            width: 45%;
+            margin-left: 2vw;
+            margin-top:1vw;
         }
-    
+        .right-align p{
+            margin-bottom:1vw;
+        }
+        .callout {
+    position: absolute; /* Use absolute positioning for overlapping */
+    top: 0; /* Adjust the top position as needed */
+    right: 0; /* Adjust the right position as needed */
+    margin-right: 40vw; /* Adjust margin-right as needed */
+    margin-top: 15vw; /* Adjust margin-top as needed */
+    color:#595959;
+    font-weight:bold;
+    font-size:1.5em;
+    line-height:5px;
+}
         .clearfix {
             clear: both;
         }
         body {
-            font-family:'Quicksand';font-size: 22px;
-            color:#0C5449;
-            margin-left:10vw;
+            color:white;
         }
+
         ::placeholder {
-            color: #0C5449; /* Placeholder text color */
+            color: white; /* Placeholder text color */
             font-style: bold; /* Placeholder text style */
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size:25px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:30px;
             text-align: center;
         }
 
         input[type="text"],
         input[type="email"]{
-            width: 85%;
-            height:3vw;
+            width: 100%;
+            height:4vw;
             padding: 10px;
             margin: 1px 5px;
-            margin-left: 3vw;
             border: 1px solid #ccc;
-            border-radius: 1px;
+            border-radius: 10px;
             box-sizing: border-box; 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size:25px;
-            color: #0C5449; 
-            text-align: center;;
+            background-color: #0C5449; 
+            color: white;
+            text-align: center;
         }
           input[type="submit"]{
             border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: #0C5449;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: gold;
+              padding: 10px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 25px;
+              border-radius: 12px;
+              cursor: pointer;
+              background-color: #0C5449;
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+              margin-left:34vw;
         }
 
         textarea {
             width: 100%;
-            height:10vw;
+            height:12vw;
             padding: 10px;
             margin: 5px 5px;
             border: 1px solid #ccc;
             border-radius: 10px;
             box-sizing: border-box; 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size:25px;
-            color: #0C5449; 
-            margin-left: 3vw;
+            font-size:30px;
+            background-color: #0C5449; 
         }
         textarea::placeholder {
-           padding-top: 3vw;
+           padding-top: 0vw;
+           text-align:left;
         }
     </style>
 </head>
 <body>
    
-    <form action="mailto:jacobstocking97@gmail.com" method="post" enctype="text/plain">
+    <form action="mailto:phoenix@wayne.edu" method="post" enctype="text/plain">
         <form action="submit.php" method="post">
     <div class="left-align">
         <label for="name"></label><br>
@@ -99,17 +113,17 @@
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="Email*"><br>
     </div>
-
+       
     <div class="right-align">
-        <img src="ContactUsBubble.png" style="height:5vw;width:20vw;margin-left: 15vw;top:0vw;position:absolute;">
+        <img src="/Users/jacob/Downloads/ContactUsBubble2.png" style="height:4vw;width:15vw;margin-left: 25vw;top:0vw;position:absolute;">
             <label for="message"></label><br>
-            <textarea id="message" name="message" placeholder="[Place text here*]"></textarea><br><br>
-            <input type="submit" value="Send">
+            <textarea id="message" name="message" placeholder="-Are our tools helpful?
+-Any tips on improvements?
+-Want to contribute?
+-Please Let Us Know!"></textarea><br><br>
+        </p> <input type="submit" value="Send">
     </div>
-    <img src="LCD.png" style="height:30vw;width:45vw;float:right;margin-top:2vw;">
-    </span>
     </form>
-    </span>
-    <img src="OurMission.png" style="position:absolute;height:17vw;width:40vw;bottom:0vw;right:30vw;">
+    <img src="/Users/jacob/Downloads/OurMission3.png" style="position:absolute;height:15vw;width:40vw;bottom:0vw;right:30vw;">
 </body>
 </html>
